@@ -8,10 +8,10 @@
 
 Take a look at the dependencies in the `package.json` file. You will note that the package requires the following:
 
-1. Body Parser -
-2. EJS -
-3. Express -
-4. Lodash -
+1. [Body Parser](https://www.npmjs.com/package/body-parser) - 
+2. [EJS](https://ejs.co/#docs) -
+3. [Express](https://expressjs.com/en/guide/routing.html) - 
+4. [Lodash](https://lodash.com/) -
 
 Take a look through all the files in the submission folder and become familiar with how the application will work.
 
@@ -25,7 +25,6 @@ Follow the steps below to install the dependencies and start the app.
 
 `npm install`
 
----
 
 ## Part A
 
@@ -37,24 +36,25 @@ Objective: Have an h1 tag with the word home displayed on your webpage.
 
 Steps:
 
-1. In the home.ejs file (located in views), input the h1 tag with home written inbetween `<h1>home</h1>
+1. In the home.ejs file (located in views), input the h1 tag with home written inbetween `<h1>home</h1>`
 2. In the app.js file create a callback function that renders home file.
-3. Start your application `nodemon app.js`
+3. Start your application `node app.js`
 
 [](image)
 
-Hints:
+### Hints
 
 1. Create a route using `app.get` to determine what route you are specifying and a call back function that will render your webpage.
-2. `app.get("", () => {})
-3. In the quotation marks we need to put the route, in this case is the home route. We can use "/"
-4. Inside the parenthases, we input our parameters of request and response which is shortened to (req, res)
-5. Inside the function we use res.render() (we get the render() method from express.)
-6. Determine what you want to render and place it inside the render brackets.
+
+`app.get("", () => {})`
+
+2. In the quotation marks we need to put the route, in this case, the home route. We can use "/"
+3. Inside the parenthesis, input the parameters of request and response which is shortened to (req, res)
+4. Inside the function use res.render() (we get the render() method from express.)
+5. Determine what you want to render and place it inside the render brackets.
 
 [](Video of how to do it)
 
----
 
 ## Part B
 
@@ -64,24 +64,23 @@ Steps:
 
 1. Open your `home.ejs` file
 2. You need to add a `<p>` tag that will contain the homeStarting content in it.
-3. Input EJS tag inside of the p tag. You can use https://ejs.co/#docs to determine what tag to use.
+3. Input EJS tag inside of the p tag. You can use [EJS](https://ejs.co/#docs) to determine what tag to use.
 4. Inside the EJS tag write startingContent.
-5. open the app.js file. Instead of just rendering the home.ejs page, we are going to enter another parameter, which is going to be a javascript object which is going to be a key value pair.
-6. The key has to match the with the variable name inside the home.ejs file.
+5. Open the app.js file. Instead of just rendering the home.ejs page, we are going to enter another parameter, which is going to be a javascript object and is going to be a key value pair.
+6. The key has to match with the variable name inside the home.ejs file.
 7. The value is whatever you want to be displayed.
 
-[](image)
+![exercise](docs/exercise.png)
 
 Hints:
 
-1. The EJS tag for HTML content is <%= =>
+1. The EJS tag for HTML content is `<%= =>`
 2. Inside home.ejs input the following code under your H1 tag `<p><%= startingContent %></p>`
 3. Change the following code to accpet another parameter: `res.render("home")`
 4. `res.render("home" , {key : value})
 
 [](Video of how to do it)
 
----
 
 ## Part C
 
@@ -93,11 +92,7 @@ Steps:
 
 2. Use the following layout example to include the header and footer to your webpage.
 
-`<%- include('header'); -%>
-
-<h1>Title</h1>
-<p>My page</p>
-<%- include('footer'); -%>`
+`<%- include('header'); -%><h1>Title</h1><p>My page</p><%- include('footer'); -%>`
 
 3. Refresh your page
 
@@ -116,7 +111,6 @@ Steps:
 
 [video]
 
- ----
 
 ## Part E
 
@@ -138,7 +132,6 @@ content: req.body.postBody
 
 [video]
 
-----
 
 ## Part F
 
@@ -163,7 +156,6 @@ app.js
 
 `app.get("/", function(req, res){ res.render("home", { startingContent: homeStartingContent, posts: posts }); });`
 
-----
 
 ## Part G
 
@@ -184,7 +176,6 @@ Bonus: handle the case sensitiviy on the title when input into the url. (hint - 
 
 Answer:
 
-----
 
 ## Part H - Bonus
 
