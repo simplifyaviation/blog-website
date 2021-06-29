@@ -77,7 +77,7 @@ Hints:
 1. The EJS tag for HTML content is `<%= =>`
 2. Inside home.ejs input the following code under your H1 tag `<p><%= startingContent %></p>`
 3. Change the following code to accpet another parameter: `res.render("home")`
-4. `res.render("home" , {key : value})
+4. `res.render("home" , {key : value})`
 
 [](Video of how to do it)
 
