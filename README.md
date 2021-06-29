@@ -127,8 +127,10 @@ Steps:
 2. Create a post method that handles the data that is posted from the user when using the form in the compose.js file.
 3. create a variable that contains an object with the following keys and values:
 
+```
 title: req.body.postTitle
 content: req.body.postBody
+```
 
 4. push the post to the array posts.
 5. redirect the user to the home page.
