@@ -8,6 +8,12 @@
 
 ## To Start
 
+1. Fork the repo onto your account
+
+![fork](./submission/docs/fork.png)
+
+2. Clone your repo
+
 Take a look at the dependencies in the `package.json` file. You will note that the package requires the following:
 
 1. [Body Parser](https://www.npmjs.com/package/body-parser) - [video on body parser](https://www.youtube.com/watch?v=vKlybue_yMQ&ab_channel=codedamn)
@@ -26,7 +32,6 @@ Follow the steps below to install the dependencies and start the app.
 2. Install the dependencies
 
 `npm install`
-
 
 ## Part A
 
@@ -59,7 +64,6 @@ Steps:
 
 [answer](https://www.loom.com/share/022a968913054ded80d7f3157d31bd9f?sharedAppSource=personal_library)
 
-
 ## Part B
 
 Objective: Display the homeStartingContent on the home page using EJS.
@@ -84,7 +88,6 @@ Hints:
 4. `res.render("home" , {key : value})`
 
 [answer](https://www.loom.com/share/696c51fba31e4e5cacaee906c82e9e9f?sharedAppSource=personal_library)
-
 
 ## Part C
 
@@ -121,7 +124,6 @@ Steps:
 
 [answer](https://www.loom.com/share/695520f3678c4d318d3e5d8140b1f45c?sharedAppSource=personal_library)
 
-
 ## Part E
 
 Objective: Add a post method to tell the server what to do when someone makes a post request to the /compose route.
@@ -141,7 +143,6 @@ content: req.body.postBody
 5. redirect the user to the home page.
 
 [answer](https://www.loom.com/share/05ec665552b24750a8f54e9f63346b3e?sharedAppSource=personal_library)
-
 
 ## Part F
 
@@ -174,7 +175,7 @@ home.ejs
 app.js
 
 ```
-app.get("/", (req, res) => { 
+app.get("/", (req, res) => {
     res.render("home", { startingContent: homeStartingContent, posts: posts });
      });
 ```
@@ -201,7 +202,6 @@ app.get('/users/:userId/books/:bookId', (req, res) => { res.send(req.params) })
 Bonus: handle the case sensitiviy and spaces on the title when input into the url. (hint - use lodash)
 
 [answer 1](https://www.loom.com/share/4b010543c4614c24bfaffdb9fded3049?sharedAppSource=personal_library)
-
 
 [answer 2](https://www.loom.com/share/89ea8e4453e241ba93ccc27f0fbf8390?sharedAppSource=personal_library)
 
