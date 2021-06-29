@@ -14,9 +14,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 // Part A - Add a route that has a callback function that will render your webpage.
-app.get("/", (req, res) => {
-res.render("home")
-} )
 
 
 

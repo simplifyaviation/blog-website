@@ -35,6 +35,12 @@ Open `app.js` to find your starting place. In here we have imported express, bod
 
 Objective: Have an h1 tag with the word home displayed on your webpage.
 
+Steps:
+
+1. In the home.ejs file (located in views), input the h1 tag with home written inbetween `<h1>home</h1>
+2. In the app.js file create a callback function that renders home file.
+3. Start your application `nodemon app.js`
+
 [](image)
 
 Hints:
@@ -46,9 +52,34 @@ Hints:
 5. Inside the function we use res.render() (we get the render() method from express.)
 6. Determine what you want to render and place it inside the render brackets.
 
+[](Video of how to do it)
+
 ---
 
 ## Part B
+
+Objective: Display the homeStartingContent on the home page using EJS.
+
+Steps:
+
+1. Open your `home.ejs` file
+2. You need to add a `<p>` tag that will contain the homeStarting content in it.
+3. Input EJS tag inside of the p tag. You can use https://ejs.co/#docs to determine what tag to use.
+4. Inside the EJS tag write startingContent.
+5. open the app.js file. Instead of just rendering the home.ejs page, we are going to enter another parameter, which is going to be a javascript object which is going to be a key value pair.
+6. The key has to match the with the variable name inside the home.ejs file.
+7. The value is whatever you want to be displayed.
+
+[](image)
+
+Hints:
+
+1. The EJS tag for HTML content is <%= =>
+2. Inside home.ejs input the following code under your H1 tag `<p><%= startingContent %></p>`
+3. Change the following code to accpet another parameter: `res.render("home")`
+4. `res.render("home" , {key : value})
+
+[](Video of how to do it)
 
 ## Part C
 
