@@ -15,10 +15,12 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 let posts = [];
-
+ 
 // Part A - Add a route that has a callback function that will render your webpage.
 
-
+app.get("/", (req , res) => {
+  res.render("home", {startingContent: homeStartingContent});
+})
 
 // Part D - Add 3 routes with call backs for the about and contact pages.
 

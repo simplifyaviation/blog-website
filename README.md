@@ -8,10 +8,10 @@
 
 Take a look at the dependencies in the `package.json` file. You will note that the package requires the following:
 
-1. [Body Parser](https://www.npmjs.com/package/body-parser) - 
-2. [EJS](https://ejs.co/#docs) -
-3. [Express](https://expressjs.com/en/guide/routing.html) - 
-4. [Lodash](https://lodash.com/) -
+1. [Body Parser](https://www.npmjs.com/package/body-parser) - [video on body parser](https://www.youtube.com/watch?v=vKlybue_yMQ&ab_channel=codedamn)
+2. [EJS](https://ejs.co/#docs) - [video on EJS](https://www.youtube.com/watch?v=lYVKbAn5Od0&ab_channel=RaddyTheBrand)
+3. [Express](https://expressjs.com/en/guide/routing.html) - [video on EJS](https://www.youtube.com/watch?v=JlgKybraoy4&ab_channel=ProgramWithErik)
+4. [Lodash](https://lodash.com/) - [video on lodash](https://www.youtube.com/watch?v=YyxliogSwrM&ab_channel=iEatWebsites)
 
 Take a look through all the files in the submission folder and become familiar with how the application will work.
 
@@ -93,10 +93,10 @@ Steps:
 2. Use the following layout example to include the header and footer to your webpage.
 
 ```
-<%- include('header'); -%>
+<%- include('./partials/header'); -%>
 <h1>Title</h1>
 <p>My page</p>
-<%- include('footer'); -%>
+<%- include('./partials/footer'); -%>
 ```
 
 3. Refresh your page
@@ -107,12 +107,13 @@ Steps:
 
 ## Part D
 
-Objective: Create routes for the about us, compose and contact pages.
+Objective: Create routes for the about, compose and contact pages.
 
 Steps:
 
-1. Create a route that renders the contact page (that includes the header and footer partials) that also renders the contact text.
-2. Do the same thing for the about us and compose page.
+1. Create a route that renders the contact page as well as the contact text.
+2. Create a route that renders the about page as well as the about text.
+3. Create a route that renders the compose page.
 
 [video]
 
