@@ -30,13 +30,13 @@ Follow the steps below to install the dependencies and start the app.
 
 ### Starting the server
 
-Open `app.js` to find your starting place. In here we have imported express, bodyparser and ejs from the node modules.
+Open `app.js` to find your starting place. In here we have imported express, bodyparser, lodash and ejs from the node modules.
 
 Objective: Have an h1 tag with the word home displayed on your webpage.
 
 Steps:
 
-1. In the home.ejs file (located in views), input the h1 tag with home written inbetween `<h1>home</h1>`
+1. In the home.ejs file (located in views directory), write home in an h1 tag: `<h1>home</h1>`
 2. In the app.js file create a callback function that renders home file.
 3. Start your application `node app.js`
 

@@ -19,7 +19,14 @@ let posts = [];
 // Part A - Add a route that has a callback function that will render your webpage.
 
 
-// Part B - Add 3 routes with call backs for the about and contact pages.
+// Part D - Add 3 routes with call backs for the about and contact pages.
+
+
+// Part E - Add a post method that handles a user requiest to the /compose route.
+
+
+// Part G - Create a route that directs the user to a page that contains the post content
+
 
 
 // Do not change the code below
