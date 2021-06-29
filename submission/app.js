@@ -16,6 +16,8 @@ app.use(express.static("public"));
 // Part A - Add a route that has a callback function that will render your webpage.
 
 
+// Part B - Add 2 routes with call backs for the about and contact pages.
+
 
 // Do not change the code below
 app.listen(3000, () => {

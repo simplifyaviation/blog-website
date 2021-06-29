@@ -83,4 +83,37 @@ Hints:
 
 ## Part C
 
+Objective: Display the header and footer partials on the home page.
+
+Steps:
+
+1. Open the home.ejs file
+
+2. Use the following layout example to include the header and footer to your webpage.
+
+`<%- include('header'); -%>
+
+<h1>Title</h1>
+<p>My page</p>
+<%- include('footer'); -%>`
+
+3. Refresh your page
+
+[](image)
+
+[video]
+
 ## Part D
+
+Objective: Create routes for the about us, compose and contact pages.
+
+Steps:
+
+1. Create a route that renders the contact page (that includes the header and footer partials) that also renders the contact text.
+2. Do the same thing for the about us and compose page.
+
+[video]
+
+## Part E
+
+Objective: Add a post method to tell the server what to do when someone makes a post request to the /compose route.
