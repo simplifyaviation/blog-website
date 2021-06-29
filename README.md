@@ -159,11 +159,14 @@ Answer:
 home.ejs
 
 ```
-<% posts.forEach((post) => { %>
-<h1><%=post.title%></h1><p> 
-<%=post.content%>
-<a href="/posts/<%=post.title%>">Read More</a></p>
-<% }) %>
+<% for(const post of posts) { %>
+        <h1>
+            <%=post.title%>
+        </h1>
+        <p>
+            <%=post.content%> <a href="/posts/<%=post.title%>">Read More</a>
+        </p>
+        <% }; %>
 ```
 
 app.js

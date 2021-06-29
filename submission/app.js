@@ -24,11 +24,31 @@ app.get("/", (req , res) => {
 
 // Part D - Add 3 routes with call backs for the about and contact pages.
 
+app.get("/compose", (req, res) => {
+  res.render("compose")
+})
 
+app.get("/about", (req, res) => {
+  res.render("about", {aboutContent: aboutContent})
+})
+
+app.get("/contact", (req, res) => {
+  res.render("contact", {contactContent: contactContent})
+})
 
 // Part E - Add a post method that handles a user requiest to the /compose route.
 
+app.post("/compose", (req, res) => {
+  const post = {
+    title: req.body.postTitle,
+    content: req.body.postBody
+  };
 
+  posts.push(post);
+
+  res.redirect("/");
+
+})
 
 // Part G - Create a route that directs the user to a page that contains the post content
 
