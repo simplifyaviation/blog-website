@@ -13,6 +13,14 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-app.listen(3000, run = () => {
+// Part A - Add a route that has a callback function that will render your webpage.
+app.get("/", (req, res) => {
+res.render("home")
+} )
+
+
+
+// Do not change the code below
+app.listen(3000, () => {
   console.log("Server started on port 3000");
 });
