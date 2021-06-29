@@ -4,14 +4,16 @@
 
 - To become familiar with the different express notations
 
+[introduction]({https://www.loom.com/share/11dc8322434d42b1a65f9aa9785f98d9?sharedAppSource=personal_library} "Introduction")
+
 ## To Start
 
 Take a look at the dependencies in the `package.json` file. You will note that the package requires the following:
 
-1. [Body Parser](https://www.npmjs.com/package/body-parser) - [video on body parser](https://www.youtube.com/watch?v=vKlybue_yMQ&ab_channel=codedamn)
-2. [EJS](https://ejs.co/#docs) - [video on EJS](https://www.youtube.com/watch?v=lYVKbAn5Od0&ab_channel=RaddyTheBrand)
-3. [Express](https://expressjs.com/en/guide/routing.html) - [video on EJS](https://www.youtube.com/watch?v=JlgKybraoy4&ab_channel=ProgramWithErik)
-4. [Lodash](https://lodash.com/) - [video on lodash](https://www.youtube.com/watch?v=YyxliogSwrM&ab_channel=iEatWebsites)
+1. [Body Parser](https://www.npmjs.com/package/body-parser) - [video on body parser]({https://www.youtube.com/watch?v=vKlybue_yMQ&ab_channel=codedamn} "video on body parser")
+2. [EJS](https://ejs.co/#docs) - [video on EJS]({https://www.youtube.com/watch?v=lYVKbAn5Od0&ab_channel=RaddyTheBrand} "video on EJS")
+3. [Express](https://expressjs.com/en/guide/routing.html) - [video on Express]({https://www.youtube.com/watch?v=JlgKybraoy4&ab_channel=ProgramWithErik} "video on express")
+4. [Lodash](https://lodash.com/) - [video on lodash]({https://www.youtube.com/watch?v=YyxliogSwrM&ab_channel=iEatWebsites} "video on Lodash")
 
 Take a look through all the files in the submission folder and become familiar with how the application will work.
 
@@ -53,7 +55,9 @@ Steps:
 4. Inside the function use res.render() (we get the render() method from express.)
 5. Determine what you want to render and place it inside the render brackets.
 
-[](Video of how to do it)
+![part-a](submission/docs/part-a.png)
+
+![answer]({https://www.loom.com/share/022a968913054ded80d7f3157d31bd9f?sharedAppSource=personal_library} "answer")
 
 
 ## Part B
@@ -70,7 +74,7 @@ Steps:
 6. The key has to match with the variable name inside the home.ejs file.
 7. The value is whatever you want to be displayed.
 
-![exercise](docs/exercise.png)
+![part-b](submission/docs/part-b.png)
 
 Hints:
 
@@ -79,7 +83,7 @@ Hints:
 3. Change the following code to accpet another parameter: `res.render("home")`
 4. `res.render("home" , {key : value})`
 
-[](Video of how to do it)
+![answer]({https://www.loom.com/share/696c51fba31e4e5cacaee906c82e9e9f?sharedAppSource=personal_library} "answer")
 
 
 ## Part C
@@ -101,9 +105,9 @@ Steps:
 
 3. Refresh your page
 
-[](image)
+![part-c](submission/docs/part-c.png)
 
-[video]
+![answer]({https://www.loom.com/share/8088db24b5254215a86c255719e82028?sharedAppSource=personal_library} "answer")
 
 ## Part D
 
@@ -115,7 +119,7 @@ Steps:
 2. Create a route that renders the about page as well as the about text.
 3. Create a route that renders the compose page.
 
-[video]
+![answer]({https://www.loom.com/share/695520f3678c4d318d3e5d8140b1f45c?sharedAppSource=personal_library} "answer")
 
 
 ## Part E
@@ -136,9 +140,7 @@ content: req.body.postBody
 4. push the post to the array posts.
 5. redirect the user to the home page.
 
-[gif]
-
-[video]
+![answer]({https://www.loom.com/share/05ec665552b24750a8f54e9f63346b3e?sharedAppSource=personal_library} "answer")
 
 
 ## Part F
@@ -177,6 +179,7 @@ app.get("/", (req, res) => {
      });
 ```
 
+![answer]({https://www.loom.com/share/81bac20989784ab3953ab3620e41156f?sharedAppSource=personal_library} "answer")
 
 ## Part G
 
@@ -195,11 +198,13 @@ app.get('/users/:userId/books/:bookId', (req, res) => { res.send(req.params) })
 2. loop through the posts array and check to see if the requested title is equal to a title that is contained in the posts array.
 3. render the post title and content.
 
-Bonus: handle the case sensitiviy on the title when input into the url. (hint - use lodash)
+Bonus: handle the case sensitiviy and spaces on the title when input into the url. (hint - use lodash)
 
-Answer:
-
+![answer]({https://www.loom.com/share/4b010543c4614c24bfaffdb9fded3049?sharedAppSource=personal_library} "answer")
+![answer]({https://www.loom.com/share/89ea8e4453e241ba93ccc27f0fbf8390?sharedAppSource=personal_library} "answer 2")
 
 ## Part H - Bonus
 
 Objective: Reduce the amount of content text on the homepage to 100 characters (blog post content).
+
+![answer]({https://www.loom.com/share/37ca52a4b25241799923784bdf98d2a3?sharedAppSource=personal_library} "answer")
