@@ -200,8 +200,10 @@ app.get('/users/:userId/books/:bookId', (req, res) => { res.send(req.params) })
 
 Bonus: handle the case sensitiviy and spaces on the title when input into the url. (hint - use lodash)
 
-[answer](https://www.loom.com/share/4b010543c4614c24bfaffdb9fded3049?sharedAppSource=personal_library)
-[answer](https://www.loom.com/share/89ea8e4453e241ba93ccc27f0fbf8390?sharedAppSource=personal_library)
+[answer 1](https://www.loom.com/share/4b010543c4614c24bfaffdb9fded3049?sharedAppSource=personal_library)
+
+
+[answer 2](https://www.loom.com/share/89ea8e4453e241ba93ccc27f0fbf8390?sharedAppSource=personal_library)
 
 ## Part H - Bonus
 
