@@ -92,7 +92,12 @@ Steps:
 
 2. Use the following layout example to include the header and footer to your webpage.
 
-`<%- include('header'); -%><h1>Title</h1><p>My page</p><%- include('footer'); -%>`
+```
+<%- include('header'); -%>
+<h1>Title</h1>
+<p>My page</p>
+<%- include('footer'); -%>
+```
 
 3. Refresh your page
 
@@ -150,24 +155,36 @@ Answer:
 
 home.ejs
 
-`<% posts.forEach(function(post){ %><h1><%=post.title%></h1><p> <%=post.content><a href="/posts/<%=post.title%>">Read More</a></p><% }) %>`
+```
+<% posts.forEach((post) => { %>
+<h1><%=post.title%></h1><p> 
+<%=post.content%>
+<a href="/posts/<%=post.title%>">Read More</a></p>
+<% }) %>
+```
 
 app.js
 
-`app.get("/", function(req, res){ res.render("home", { startingContent: homeStartingContent, posts: posts }); });`
+```
+app.get("/", (req, res) => { 
+    res.render("home", { startingContent: homeStartingContent, posts: posts });
+     });
+```
 
 
 ## Part G
 
 Objective: Create a route that directs to a page that contains each individual post.
 
-Have a look through the express documentation - https://expressjs.com/en/guide/routing.html
+Have a look through the express documentation - [express routing](https://expressjs.com/en/guide/routing.html)
 
 Steps:
 
 1. Use the following code example to create a path for each individual blog post.
 
-`app.get('/users/:userId/books/:bookId', function (req, res) { res.send(req.params) })`
+```
+app.get('/users/:userId/books/:bookId', (req, res) => { res.send(req.params) })
+```
 
 2. loop through the posts array and check to see if the requested title is equal to a title that is contained in the posts array.
 3. render the post title and content.
